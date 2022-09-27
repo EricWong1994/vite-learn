@@ -2,15 +2,17 @@ import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Foo } from 'dumi-ui';
+import { Button } from 'antd';
+import 'antd/dist/antd.css';
 
 function App() {
 	const [count, setCount] = useState(0);
-	// debugger
 
 	return (
 		<div className='App'>
 			<header className='App-header'>
 				<img src={logo} className='App-logo' alt='logo' />
+				<Button type='primary'>antd按钮</Button>
 				<Foo title='dumi-ui测试'></Foo>
 				<p>Hello Vite + React!</p>
 				<p>
