@@ -1,6 +1,6 @@
 {
 	"name": "vite-learn-project",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"scripts": {
 		"start": "npm run dev",
 		"dev": "vite",
