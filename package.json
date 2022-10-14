@@ -5,7 +5,9 @@
 		"start": "npm run dev",
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"log": "pnpm login --registry=http://81.70.168.49:8081/repository/npm-hosted/",
+		"pub": "pnpm build && npm_config_registry=http://81.70.168.49:8081/repository/npm-hosted/ pnpm publish --no-git-checks"
 	},
 	"dependencies": {
 		"dumi-ui": "^1.0.1",
@@ -14,6 +16,7 @@
 		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.25.0",
 		"@types/react": "^17.0.50",
 		"@types/react-dom": "^17.0.17",
 		"@vitejs/plugin-react": "2.1.0",
