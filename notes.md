@@ -1,0 +1,1 @@
+[vite] Internal server error: Cannot find module '@svgr/core'

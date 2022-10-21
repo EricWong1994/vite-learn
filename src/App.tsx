@@ -7,11 +7,13 @@ import 'antd/dist/antd.css';
 // import Trycatch from './Trycatch';
 // import Trycatch from './demos/errorCatch/trycatch';
 import Trycatch from './demos/errorCatch/Trycatch';
+import IconDemo from './demos/iconDemo/index';
 
 function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
+				<IconDemo></IconDemo>
 				<Trycatch></Trycatch>
 				<img src={logo} className='App-logo' alt='logo' />
 				<Button type='primary'>antd按钮</Button>
