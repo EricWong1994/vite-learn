@@ -19,10 +19,16 @@ export default defineConfig({
 			// targets to transform
 			include: [
 				/\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-				/\.md$/, // .md
 			],
 			imports: ['react'],
-			dts: true, // or a custom path
+			// dts: true, // or a custom path
+			dts: './auto-imports.d.ts',
+			eslintrc: {
+				// enabled: false, //设置为ture
+				enabled: true, //设置为ture
+				filepath: './.eslintrc-auto-import.json',
+				globalsPropValue: true,
+			},
 		}),
 	],
 	server: {
