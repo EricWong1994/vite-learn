@@ -21,7 +21,7 @@
 	"devDependencies": {
 		"@changesets/cli": "^2.25.0",
 		"@iconify/json": "^2.1.122",
-		"@types/react": "^17.0.50",
+		"@types/react": "18",
 		"@types/react-dom": "^17.0.17",
 		"@vitejs/plugin-react": "2.1.0",
 		"antd": "^4.23.4",

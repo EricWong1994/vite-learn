@@ -4,7 +4,7 @@ specifiers:
   '@changesets/cli': ^2.25.0
   '@iconify/json': ^2.1.122
   '@svgr/core': ^6.5.0
-  '@types/react': ^17.0.50
+  '@types/react': '18'
   '@types/react-dom': ^17.0.17
   '@vitejs/plugin-react': 2.1.0
   antd: ^4.23.4
@@ -31,7 +31,7 @@ dependencies:
 devDependencies:
   '@changesets/cli': 2.25.0
   '@iconify/json': 2.1.122
-  '@types/react': 17.0.50
+  '@types/react': 18.0.21
   '@types/react-dom': 17.0.17
   '@vitejs/plugin-react': 2.1.0_vite@3.1.6
   antd: 4.23.4_sfoxds7t5ydpegc3knd667wn6m
@@ -822,6 +822,14 @@ packages:
 
   /@types/react/17.0.50:
     resolution: {integrity: sha512-ZCBHzpDb5skMnc1zFXAXnL3l1FAdi+xZvwxK+PkglMmBrwjpp9nKaWuEvrGnSifCJmBFGxZOOFuwC6KH/s0NuA==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/react/18.0.21:
+    resolution: {integrity: sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
