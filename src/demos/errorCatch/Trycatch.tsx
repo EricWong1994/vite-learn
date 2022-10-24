@@ -3,9 +3,9 @@
 import React, { useEffect } from 'react';
 
 export default function Trycatch() {
-	const logMyErrors = e => {
-		console.log('e: ', e); // myException
-	};
+	// const logMyErrors = e => {
+	// 	console.log('e: ', e); // myException
+	// };
 	// useEffect(() => {
 	// 	try {
 	// 		throw 'myException'; // generates an exception
