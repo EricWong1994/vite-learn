@@ -1,8 +1,10 @@
 # vite-learn
 
 启动项目: pnpm start
-
-
+```
+➜  Local:   http://localhost:3000/
+➜  Inspect: http://localhost:3000/__inspect/
+```
 
 1.  `pnpm changeset` 更改版本级别，填写版本变更 changelog
 
