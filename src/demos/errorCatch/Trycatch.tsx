@@ -99,24 +99,25 @@ export default function Trycatch() {
 	// 	request();
 	// }, []);
 
-	useEffect(() => {
-		function handleErrors(response) {
-			if (!response.ok) {
-				throw Error(response.statusText);
-			}
-		}
+	// 模拟请求
+	// useEffect(() => {
+	// 	function handleErrors(response) {
+	// 		if (!response.ok) {
+	// 			throw Error(response.statusText);
+	// 		}
+	// 	}
 
-		(async function () {
-			try {
-				let response = await fetch('http://httpstat.us/500');
-				handleErrors(response);
-				let data = await response.json();
-				return data;
-			} catch (error) {
-				console.log('Caught', error);
-			}
-		})();
-	}, []);
+	// 	(async function () {
+	// 		try {
+	// 			let response = await fetch('http://httpstat.us/200');
+	// 			handleErrors(response);
+	// 			let data = await response.json();
+	// 			return data;
+	// 		} catch (error) {
+	// 			console.log('Caught', error);
+	// 		}
+	// 	})();
+	// }, []);
 
 	// useEffect(() => {
 	// 	function handleErrors(response) {
