@@ -9,14 +9,16 @@ import 'antd/dist/antd.css';
 import Trycatch from './demos/errorCatch/Trycatch';
 import IconDemo from './demos/iconDemo/index';
 import AutoImport from './demos/autoImport/index';
+import SvgComponent from './demos/svgdemo/hello';
 
 function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<AutoImport></AutoImport>
-				<IconDemo></IconDemo>
-				<Trycatch></Trycatch>
+				<SvgComponent />
+				<AutoImport />
+				<IconDemo />
+				<Trycatch />
 				<img src={logo} className='App-logo' alt='logo' />
 				<Button type='primary'>antd按钮</Button>
 				<Foo title='dumi-ui测试'></Foo>
