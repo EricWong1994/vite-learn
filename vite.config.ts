@@ -7,7 +7,6 @@ import Inspect from 'vite-plugin-inspect';
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
-		// react(),
 		react({
 			// Exclude storybook stories
 			exclude: /\.stories\.(t|j)sx?$/,

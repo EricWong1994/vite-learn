@@ -15,7 +15,8 @@ function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<SvgComponent />
+				{/* SVG面积太大了 */}
+				{/* <SvgComponent /> */}
 				<AutoImport />
 				<IconDemo />
 				<Trycatch />

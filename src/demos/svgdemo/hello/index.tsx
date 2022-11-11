@@ -5,6 +5,7 @@ import React from 'react';
 
 export default function SvgComponent() {
 	return (
+		// <svg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
 		<svg viewBox='0 0 892 529' xmlns='http://www.w3.org/2000/svg'>
 			<defs>
 				<path id='a' d='M.061.111h72.392V52.94H.061z' />
