@@ -10,10 +10,12 @@ import Trycatch from './demos/errorCatch/Trycatch';
 import IconDemo from './demos/iconDemo/index';
 import AutoImport from './demos/autoImport/index';
 import SvgComponent from './demos/svgdemo/hello';
+import { Avatar } from './assets/images';
 
 function App() {
 	return (
 		<div className='App'>
+			<img src={Avatar} alt='' />
 			<header className='App-header'>
 				{/* SVG面积太大了 */}
 				{/* <SvgComponent /> */}

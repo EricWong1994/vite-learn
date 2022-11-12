@@ -29,6 +29,7 @@
 		"unplugin-auto-import": "^0.11.2",
 		"unplugin-icons": "^0.14.12",
 		"vite": "^3.0.0",
+		"vite-plugin-hot-export": "^0.5.9",
 		"vite-plugin-inspect": "^0.7.5",
 		"xiaowang-cli": "^1.0.4"
 	}
