@@ -4,7 +4,7 @@ import Icons from 'unplugin-icons/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Inspect from 'vite-plugin-inspect';
 import HotExport from 'vite-plugin-hot-export';
-
+import svgr from 'vite-plugin-svgr';
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [
@@ -15,6 +15,7 @@ export default defineConfig({
 			include: '**/*.tsx',
 			// include: '**/**/**/*.tsx', // 不需要
 		}),
+		svgr(),
 		Icons({ compiler: 'jsx', jsx: 'react' }),
 		AutoImport({
 			// targets to transform
@@ -37,5 +38,8 @@ export default defineConfig({
 	server: {
 		open: true,
 		port: 3000,
+		// hmr: {
+		// 	overlay: false,
+		// },
 	},
 });

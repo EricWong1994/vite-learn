@@ -16,7 +16,9 @@ export default defineExportConfig({
 		{
 			targetDir: './src/assets/svgs',
 			customImport: (fileName, file) => {
-				return `import { ReactComponent as ${fileName} } from '${file}'`;
+				// return `import { ReactComponent as Svg${fileName} } from './${file}'`;
+				// return `import { ReactComponent as Svg${fileName} } from '${file}'`;
+				return `import { ReactComponent as ${fileName} } from './${file}'`;
 			},
 		},
 		{

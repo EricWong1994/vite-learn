@@ -16,5 +16,11 @@
 		"noEmit": true,
 		"jsx": "react-jsx"
 	},
-	"include": ["./src", "./auto-imports.d.ts"]
+	"include": [
+		"./src",
+		"./auto-imports.d.ts",
+		"./custom.d.ts",
+		"./typings.d.ts"
+	],
+	"exclude": ["node_modules", "dist"]
 }
