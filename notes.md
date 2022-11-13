@@ -25,3 +25,5 @@ vite启动插件，结合vscode vite插件实现自启动项目，并打开，�
 ### vite-plugin-react-inspector
 从浏览器跳转IDE
 不好用
+
+### [⭐️vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr)

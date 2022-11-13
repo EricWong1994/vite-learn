@@ -9,13 +9,16 @@ import AutoImport from './demos/autoImport/index';
 import SvgComponent from './demos/svgdemo/hello';
 import { Avatar } from './assets/images';
 import 'antd/dist/antd.css';
-import './App.css';
 import { Logo } from './assets/svgs';
+import './App.css';
 
 function App() {
 	return (
 		<div className='App'>
-			<img src={Avatar} alt='' />
+			<h1 className='text-3xl font-bold bg-red-200 underline'>
+				Hello Tailwindcss
+			</h1>
+			<img src={Avatar} alt='' className='w-20px' />
 			<header className='App-header'>
 				{/* SVG面积太大了 */}
 				{/* <SvgComponent /> */}
