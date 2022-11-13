@@ -15,10 +15,16 @@ import './App.css';
 function App() {
 	return (
 		<div className='App'>
-			<h1 className='text-3xl font-bold bg-red-200 underline'>
-				Hello Tailwindcss
-			</h1>
-			<img src={Avatar} alt='' className='w-20px' />
+			<div className='flex'>
+				<h1 className='text-3xl font-bold bg-red-200 underline rounded-lg'>
+					Hello Tailwindcss
+				</h1>
+				<img src={Avatar} alt='' className='w-20px' />
+			</div>
+			<div className='main'>
+				main
+				<div className='cl-blue'>斯维尔无</div>
+			</div>
 			<header className='App-header'>
 				{/* SVG面积太大了 */}
 				{/* <SvgComponent /> */}
