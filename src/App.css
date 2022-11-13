@@ -1,5 +1,10 @@
 /* @import 'assets/css/common.css'; */
 
+.main {
+	width: 200px;
+	background: skyblue;
+}
+
 .App {
 	text-align: center;
 }
