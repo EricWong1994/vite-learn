@@ -7,20 +7,15 @@ import Trycatch from './demos/errorCatch/Trycatch';
 import IconDemo from './demos/iconDemo/index';
 import AutoImport from './demos/autoImport/index';
 import SvgComponent from './demos/svgdemo/hello';
-import { Avatar } from './assets/images';
 import 'antd/dist/antd.css';
 import { Logo } from './assets/svgs';
 import './App.css';
+import TailwindComp from './demos/cssDemo/TailwindComp';
 
 function App() {
 	return (
 		<div className='App'>
-			<div className='flex'>
-				<h1 className='text-3xl font-bold bg-red-200 underline rounded-lg'>
-					Hello Tailwindcss
-				</h1>
-				<img src={Avatar} alt='' className='w-20px' />
-			</div>
+			<TailwindComp />
 			<div className='main'>
 				main
 				<div className='cl-blue'>斯维尔无</div>
