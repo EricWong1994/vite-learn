@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@svgr/core": "^6.5.0",
+		"@tanstack/react-query": "^4.20.4",
 		"dumi-ui": "^1.0.1",
 		"esbuild": "^0.13.15",
 		"react": "^17.0.2",
