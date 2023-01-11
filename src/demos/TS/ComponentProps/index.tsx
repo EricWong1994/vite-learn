@@ -52,11 +52,10 @@ type AppProps = {
 }
 const ComponentProps = (props: AppProps) => {
   const { onChange } = props
-  return (
-    <div>
-      <input type='text' onChange={} />
-    </div>
-  )
+  return '111'
+  // <div>
+  //   <input type='text' onChange={onChange} />
+  // </div>
 }
 
 export default ComponentProps

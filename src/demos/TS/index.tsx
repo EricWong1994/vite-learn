@@ -1,4 +1,5 @@
 import React from 'react'
+import ClassCompIndex from './ClassComp'
 import ComponentProps from './ComponentProps'
 
 export default function TSIndex() {
@@ -30,6 +31,8 @@ export default function TSIndex() {
           <h1>水电费水电费水电费</h1>
         </div>
       </ComponentProps>
+      <ClassCompIndex />
+      {/* <MyComp1 condition /> */}
     </div>
   )
 }
