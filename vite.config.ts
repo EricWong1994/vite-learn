@@ -41,5 +41,13 @@ export default defineConfig({
 		// hmr: {
 		// 	overlay: false,
 		// },
-	},
+  },
+  css: {
+    /* CSS 预处理器 */
+    preprocessorOptions: {
+      scss: {
+        // additionalData: '@import "src/assets/styles/var.scss";'
+      }
+    }
+  },
 });
