@@ -16,28 +16,33 @@ import KeepAliveDemo from './demos/KeepAliveDemo';
 import MyComponentUseScale from "./demos/GeistDemo/UseScaleComp";
 import { CssBaseline, GeistProvider } from '@geist-ui/core';
 import GeistDemoIndex from './demos/GeistDemo';
+import InfiniteScrollerView from './containers/InfiniteScrollerView';
+import WindowListView from './containers/WindowListView';
+
 function App() {
   return (
     <div className='App'>
-      <GeistProvider>
-        {/* // --> 基础样式 */}
-        <CssBaseline />
-        {/* <GeistDemoIndex /> */}
-        原始1：
-        <MyComponentUseScale />
-        <MyComponentUseScale width={'16px'} />
-        <MyComponentUseScale width={'0.5'} />
-        <MyComponentUseScale width={'10px'} />
-        <MyComponentUseScale width={'auto'} />
-        {/* 当子组件有fontSize: SCALES.font(1)时 unit如下配置字体会放大十倍 */}
-        <MyComponentUseScale unit="10rem" />
-        {/* 字号2倍 即32px */}
-        <MyComponentUseScale font='2' />
-        原始2：
-        <MyComponentUseScale />
-        <MyComponentUseScale scale={2} />
+      <div className='hidden'>
+        <GeistProvider>
+          {/* // --> 基础样式 */}
+          <CssBaseline />
+          {/* <GeistDemoIndex /> */}
+          原始1：
+          <MyComponentUseScale />
+          <MyComponentUseScale width={'16px'} />
+          <MyComponentUseScale width={'0.5'} />
+          <MyComponentUseScale width={'10px'} />
+          <MyComponentUseScale width={'auto'} />
+          {/* 当子组件有fontSize: SCALES.font(1)时 unit如下配置字体会放大十倍 */}
+          <MyComponentUseScale unit="10rem" />
+          {/* 字号2倍 即32px */}
+          <MyComponentUseScale font='2' />
+          原始2：
+          <MyComponentUseScale />
+          <MyComponentUseScale scale={2} />
 
-      </GeistProvider>
+        </GeistProvider>
+      </div>
       <div className='hidden'>
         <KeepAliveDemo />
         <TailwindComp />
@@ -61,4 +66,10 @@ function App() {
   );
 }
 
-export default App;
+function NewApp() {
+  return <div className='App'>
+    {/* <InfiniteScrollerView /> */}
+    <WindowListView />
+  </div>
+}
+export default NewApp;

@@ -2,12 +2,17 @@ lockfileVersion: 5.4
 
 specifiers:
   '@changesets/cli': ^2.25.0
+  '@faker-js/faker': ^7.6.0
   '@geist-ui/core': ^2.3.8
   '@iconify/json': ^2.1.122
   '@svgr/core': ^6.5.0
   '@tanstack/react-query': ^4.20.4
   '@types/react': '18'
   '@types/react-dom': ^17.0.17
+  '@types/react-infinite-scroller': ^1.2.3
+  '@types/react-virtualized-auto-sizer': ^1.0.1
+  '@types/react-window': ^1.8.5
+  '@types/react-window-infinite-loader': ^1.0.6
   '@vitejs/plugin-react': 2.1.0
   antd: ^4.23.4
   autoprefixer: ^10.4.13
@@ -17,7 +22,11 @@ specifiers:
   postcss-import: ^15.0.0
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-infinite-scroller: ^1.2.6
   react-stillness-component: ^0.9.1
+  react-virtualized-auto-sizer: ^1.0.7
+  react-window: ^1.8.8
+  react-window-infinite-loader: ^1.0.8
   sass: ^1.59.2
   tailwindcss: ^3.2.4
   typescript: ^4.8.4
@@ -31,14 +40,23 @@ specifiers:
   xiaowang-cli: ^1.0.4
 
 dependencies:
+  '@faker-js/faker': 7.6.0
   '@geist-ui/core': 2.3.8_sfoxds7t5ydpegc3knd667wn6m
   '@svgr/core': 6.5.0
   '@tanstack/react-query': 4.20.4_sfoxds7t5ydpegc3knd667wn6m
+  '@types/react-infinite-scroller': 1.2.3
+  '@types/react-virtualized-auto-sizer': 1.0.1
+  '@types/react-window': 1.8.5
+  '@types/react-window-infinite-loader': 1.0.6
   dumi-ui: 1.0.1
   esbuild: 0.13.15
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-infinite-scroller: 1.2.6_react@17.0.2
   react-stillness-component: 0.9.1_if3jsaxjd3pbqrw6g3fkl46eqq
+  react-virtualized-auto-sizer: 1.0.7_sfoxds7t5ydpegc3knd667wn6m
+  react-window: 1.8.8_sfoxds7t5ydpegc3knd667wn6m
+  react-window-infinite-loader: 1.0.8_sfoxds7t5ydpegc3knd667wn6m
   vite-learn-project: 0.0.1
 
 devDependencies:
@@ -571,6 +589,11 @@ packages:
     dev: true
     optional: true
 
+  /@faker-js/faker/7.6.0:
+    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    dev: false
+
   /@geist-ui/core/2.3.8_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-OKwGgTA4+fBM41eQbqDoUj4XBycZbYH7Ynrn6LPO5yKX7zeWPu/R7HN3vB4/oHt34VTDQI5sDNb1SirHvNyB5w==}
     peerDependencies:
@@ -888,6 +911,31 @@ packages:
     dependencies:
       '@types/react': 17.0.50
     dev: true
+
+  /@types/react-infinite-scroller/1.2.3:
+    resolution: {integrity: sha512-l60JckVoO+dxmKW2eEG7jbliEpITsTJvRPTe97GazjF5+ylagAuyYdXl8YY9DQsTP9QjhqGKZROknzgscGJy0A==}
+    dependencies:
+      '@types/react': 18.0.21
+    dev: false
+
+  /@types/react-virtualized-auto-sizer/1.0.1:
+    resolution: {integrity: sha512-GH8sAnBEM5GV9LTeiz56r4ZhMOUSrP43tAQNSRVxNexDjcNKLCEtnxusAItg1owFUFE6k0NslV26gqVClVvong==}
+    dependencies:
+      '@types/react': 18.0.21
+    dev: false
+
+  /@types/react-window-infinite-loader/1.0.6:
+    resolution: {integrity: sha512-V8g8sBDLVeJJAfEENJS7VXZK+DRJ+jzPNtk8jpj2G+obhf+iqGNUDGwNWCbBhLiD+KpHhf3kWQlKBRi0tAeU4Q==}
+    dependencies:
+      '@types/react': 18.0.21
+      '@types/react-window': 1.8.5
+    dev: false
+
+  /@types/react-window/1.8.5:
+    resolution: {integrity: sha512-V9q3CvhC9Jk9bWBOysPGaWy/Z0lxYcTXLtLipkt2cnRj1JOSFNF7wqGpkScSXMgBwC+fnVRg/7shwgddBG5ICw==}
+    dependencies:
+      '@types/react': 18.0.21
+    dev: false
 
   /@types/react/17.0.50:
     resolution: {integrity: sha512-ZCBHzpDb5skMnc1zFXAXnL3l1FAdi+xZvwxK+PkglMmBrwjpp9nKaWuEvrGnSifCJmBFGxZOOFuwC6KH/s0NuA==}
@@ -3311,6 +3359,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /memoize-one/5.2.1:
+    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
+    dev: false
+
   /memoize-one/6.0.0:
     resolution: {integrity: sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==}
     dev: true
@@ -3849,6 +3901,14 @@ packages:
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
+
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
 
   /proto-list/1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
@@ -4416,6 +4476,15 @@ packages:
       react: 17.0.2
       scheduler: 0.20.2
 
+  /react-infinite-scroller/1.2.6_react@17.0.2:
+    resolution: {integrity: sha512-mGdMyOD00YArJ1S1F3TVU9y4fGSfVVl6p5gh/Vt4u99CJOptfVu/q5V/Wlle72TMgYlBwIhbxK5wF0C/R33PXQ==}
+    peerDependencies:
+      react: ^0.14.9 || ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      prop-types: 15.8.1
+      react: 17.0.2
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -4440,6 +4509,41 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       redux: 4.2.0
+    dev: false
+
+  /react-virtualized-auto-sizer/1.0.7_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-Mxi6lwOmjwIjC1X4gABXMJcKHsOo0xWl3E3ugOgufB8GJU+MqrtY35aBuvCYv/razQ1Vbp7h1gWJjGjoNN5pmA==}
+    engines: {node: '>8.0.0'}
+    peerDependencies:
+      react: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0-rc
+      react-dom: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0-rc
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-window-infinite-loader/1.0.8_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-907ZLAiZZfBHuZyiY0V7uiSL4P/rI6UQyCF9wES1cDWTeyNLgGLaxu+BZkcUW3R5tSCQcbCcWBl0jVIpYzrKGQ==}
+    engines: {node: '>8.0.0'}
+    peerDependencies:
+      react: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0
+      react-dom: ^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-window/1.8.8_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-D4IiBeRtGXziZ1n0XklnFGu7h9gU684zepqyKzgPNzrsrk7xOCxni+TCckjg2Nr/DiaEEGVVmnhYSlT2rB47dQ==}
+    engines: {node: '>8.0.0'}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@babel/runtime': 7.19.0
+      memoize-one: 5.2.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react/17.0.2:

@@ -1,0 +1,16 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gold;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px;
+  /* height: 250px; */
+  height: 150px;
+  /* TODO css提示没有了 */
+  /* box-sizing: border-box; */
+}
+.id {
+  text-align: center;
+  padding: 4px;
+}
