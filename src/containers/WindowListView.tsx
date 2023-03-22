@@ -9,12 +9,17 @@ import UserInfo from '../components/UserInfo'
 import './WindowListView.css';
 import { useRowChanged } from '../hooks/useRowChanged';
 
-const isItemLoaded = index => false;
-
 const WindowListView = () => {
   const [users, setUsers] = useState([])
   const listRef = useRef({})
   const rowHeights = useRef({})
+  // console.log('--------RENDER---------')
+  const isItemLoaded = index => {
+    // console.log('isItemLoaded,index=', index, 'users', users.length)
+    return index < users.length
+    // return false
+  }
+
   const getRowHeight = index => rowHeights.current[index] || 180;
 
   const setRowHeight = (index, size) => {
