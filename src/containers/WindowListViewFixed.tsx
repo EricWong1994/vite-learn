@@ -6,7 +6,7 @@ import InfiniteLoader from 'react-window-infinite-loader';
 
 import { fetchUsers } from '../services/UserService'
 import UserInfo from '../components/UserInfo'
-import './WindowListView.css';
+import './WindowListViewFixed.css';
 
 const isItemLoaded = index => false;
 

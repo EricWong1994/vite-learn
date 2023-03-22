@@ -6,8 +6,8 @@ import InfiniteLoader from 'react-window-infinite-loader';
 
 import { fetchUsers } from '../services/UserService'
 import UserInfo from '../components/UserInfo'
-import './WindowListView.css';
 import { useRowChanged } from '../hooks/useRowChanged';
+import './WindowListView.css';
 
 const WindowListView = () => {
   const [users, setUsers] = useState([])
@@ -44,6 +44,10 @@ const WindowListView = () => {
     setUsers(fetchUsers())
   }, [])
 
+  const handleScroll = ({ scrollTop }) => {
+
+  }
+
   return (
     <div className="container">
       <AutoSizer>
@@ -64,6 +68,7 @@ const WindowListView = () => {
                 // ref={ref}
                 ref={listRef}
                 onItemsRendered={onItemsRendered}
+              // style={{ height: '100% !important' }}
               >
                 {Row}
               </List>

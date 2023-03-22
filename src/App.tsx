@@ -19,6 +19,7 @@ import GeistDemoIndex from './demos/GeistDemo';
 import InfiniteScrollerView from './containers/InfiniteScrollerView';
 import WindowListView from './containers/WindowListView';
 import ReactWindowIndex from './demos/reactwindow';
+import WindowListViewFixed from './containers/WindowListViewFixed';
 
 function App() {
   return (
@@ -71,8 +72,11 @@ function NewApp() {
   return <div className='App'>
     {/* <InfiniteScrollerView /> */}
     {/* B站虚拟列表 */}
-    {/* <WindowListView /> */}
-    <ReactWindowIndex />
+    {/* <InfiniteScrollerView /> */}
+    {/* <WindowListViewFixed /> */}
+    <WindowListView />
+
+    {/* <ReactWindowIndex /> */}
   </div>
 }
 export default NewApp;

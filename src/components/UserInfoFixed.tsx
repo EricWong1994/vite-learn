@@ -1,5 +1,5 @@
 import React from 'react'
-import './UserInfo.css'
+import './UserInfoFixed.css'
 
 function UserInfo({ user }) {
 
