@@ -44,10 +44,6 @@ dependencies:
   '@geist-ui/core': 2.3.8_sfoxds7t5ydpegc3knd667wn6m
   '@svgr/core': 6.5.0
   '@tanstack/react-query': 4.20.4_sfoxds7t5ydpegc3knd667wn6m
-  '@types/react-infinite-scroller': 1.2.3
-  '@types/react-virtualized-auto-sizer': 1.0.1
-  '@types/react-window': 1.8.5
-  '@types/react-window-infinite-loader': 1.0.6
   dumi-ui: 1.0.1
   esbuild: 0.13.15
   react: 17.0.2
@@ -64,6 +60,10 @@ devDependencies:
   '@iconify/json': 2.1.122
   '@types/react': 18.0.21
   '@types/react-dom': 17.0.17
+  '@types/react-infinite-scroller': 1.2.3
+  '@types/react-virtualized-auto-sizer': 1.0.1
+  '@types/react-window': 1.8.5
+  '@types/react-window-infinite-loader': 1.0.6
   '@vitejs/plugin-react': 2.1.0_vite@3.1.6
   antd: 4.23.4_sfoxds7t5ydpegc3knd667wn6m
   autoprefixer: 10.4.13_postcss@8.4.19
@@ -916,26 +916,26 @@ packages:
     resolution: {integrity: sha512-l60JckVoO+dxmKW2eEG7jbliEpITsTJvRPTe97GazjF5+ylagAuyYdXl8YY9DQsTP9QjhqGKZROknzgscGJy0A==}
     dependencies:
       '@types/react': 18.0.21
-    dev: false
+    dev: true
 
   /@types/react-virtualized-auto-sizer/1.0.1:
     resolution: {integrity: sha512-GH8sAnBEM5GV9LTeiz56r4ZhMOUSrP43tAQNSRVxNexDjcNKLCEtnxusAItg1owFUFE6k0NslV26gqVClVvong==}
     dependencies:
       '@types/react': 18.0.21
-    dev: false
+    dev: true
 
   /@types/react-window-infinite-loader/1.0.6:
     resolution: {integrity: sha512-V8g8sBDLVeJJAfEENJS7VXZK+DRJ+jzPNtk8jpj2G+obhf+iqGNUDGwNWCbBhLiD+KpHhf3kWQlKBRi0tAeU4Q==}
     dependencies:
       '@types/react': 18.0.21
       '@types/react-window': 1.8.5
-    dev: false
+    dev: true
 
   /@types/react-window/1.8.5:
     resolution: {integrity: sha512-V9q3CvhC9Jk9bWBOysPGaWy/Z0lxYcTXLtLipkt2cnRj1JOSFNF7wqGpkScSXMgBwC+fnVRg/7shwgddBG5ICw==}
     dependencies:
       '@types/react': 18.0.21
-    dev: false
+    dev: true
 
   /@types/react/17.0.50:
     resolution: {integrity: sha512-ZCBHzpDb5skMnc1zFXAXnL3l1FAdi+xZvwxK+PkglMmBrwjpp9nKaWuEvrGnSifCJmBFGxZOOFuwC6KH/s0NuA==}
