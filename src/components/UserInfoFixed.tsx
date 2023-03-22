@@ -9,7 +9,7 @@ function UserInfo({ user }) {
       {/* <sup className='id'>{user.id}</sup> */}
       <div className='id'>{user.id}</div>
       <h3>{user.name}</h3>
-      <em>{user.description}</em>
+      <em>{user.email}</em>
     </div>
   )
 }
