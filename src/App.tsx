@@ -18,6 +18,7 @@ import { CssBaseline, GeistProvider } from '@geist-ui/core';
 import GeistDemoIndex from './demos/GeistDemo';
 import InfiniteScrollerView from './containers/InfiniteScrollerView';
 import WindowListView from './containers/WindowListView';
+import ReactWindowIndex from './demos/reactwindow';
 
 function App() {
   return (
@@ -69,7 +70,9 @@ function App() {
 function NewApp() {
   return <div className='App'>
     {/* <InfiniteScrollerView /> */}
-    <WindowListView />
+    {/* B站虚拟列表 */}
+    {/* <WindowListView /> */}
+    <ReactWindowIndex />
   </div>
 }
 export default NewApp;
