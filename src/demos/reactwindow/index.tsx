@@ -1,6 +1,7 @@
 import React from 'react'
 import Example from './Example'
 import FixedSizeGridDemo from './FixedSizeGridDemo'
+import FixedSizeListDemo from './MiniWindow/FixedSizeListDemo'
 import VariableSizeListDemo from './VariableSizeListDemo'
 
 function ReactWindowIndex() {
@@ -8,7 +9,10 @@ function ReactWindowIndex() {
     <div>
       {/* <Example /> */}
       {/* <VariableSizeListDemo /> */}
-      <FixedSizeGridDemo />
+      {/* <FixedSizeGridDemo /> */}
+
+      {/* 自己实现 */}
+      <FixedSizeListDemo />
     </div>
   )
 }

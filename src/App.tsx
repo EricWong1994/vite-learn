@@ -70,13 +70,13 @@ function App() {
 
 function NewApp() {
   return <div className='App'>
-    {/* <InfiniteScrollerView /> */}
-    {/* B站虚拟列表 */}
+    {/* 下面3个都是B站虚拟列表 */}
     {/* <InfiniteScrollerView /> */}
     {/* <WindowListViewFixed /> */}
-    <WindowListView />
+    {/* <WindowListView /> */}
 
-    {/* <ReactWindowIndex /> */}
+    {/* ReactWindow官方用例 */}
+    <ReactWindowIndex />
   </div>
 }
 export default NewApp;
