@@ -77,8 +77,8 @@ function NewApp() {
     {/* <WindowListView /> */}
 
     {/* ReactWindow官方用例 */}
-    {/* <ReactWindowIndex /> */}
-    <AxiosDemo />
+    <ReactWindowIndex />
+    {/* <AxiosDemo /> */}
   </div>
 }
 export default NewApp;

@@ -9,6 +9,11 @@ function createListComponent({
   getEndIndexForOffset
 }) {
   return class extends React.Component {
+    constructor(props) {
+      super(props);
+      //这个是类的实例的属性，用来存放内部的些状态变量
+      this.state = { scrollOffset: 0 }
+    }
     // 定义需要预渲染的个数
     static defaultProps = {
       overscanCount: 2, // 性能好可以多设置
@@ -22,16 +27,15 @@ function createListComponent({
     getRangeToRender = () => {
       const { scrollOffset } = this.state
       const { overscanCount, itemCount } = this.props
-      console.log('overscanCount: ', overscanCount);
       // 索引的计算处理同样因为场景不同外部传入
 
       // 根据卷去高度计算开始索引
       const startIndex = getStartIndexForOffset(this.props, scrollOffset)
       // 根据开始索引计算 结束索引
       const endIndex = getEndIndexForOffset(this.props, startIndex)
-      return [startIndex, endIndex]
+      // return [startIndex, endIndex]
       // 向下滚动要取最大值，向上滚动时要取最小值，需要跟索引临界值对比
-      // return [Math.max(0, startIndex - overscanCount), Math.min(itemCount - 1, endIndex + overscanCount)]
+      return [Math.max(0, startIndex - overscanCount), Math.min(itemCount - 1, endIndex + overscanCount)]
     }
 
     // 每一项的样式
@@ -46,8 +50,12 @@ function createListComponent({
       return style;
     }
 
+    onScroll = (event) => {
+      const { scrollTop } = event.currentTarget;
+      this.setState({ scrollOffset: scrollTop })
+    }
+
     render() {
-      console.log('render: ');
       // 这个类组件是返回的页面具体使用的那个组件，所以可以直接通过属性获取值
       const { width, height, itemCount, children: ComponentType } = this.props;
       // 我们根据上面的 dom 结构可以写出如下布局
@@ -72,7 +80,7 @@ function createListComponent({
           items.push(<ComponentType index={i} style={this.getItemStyle(i)} key={i} />)
         }
       }
-      return <div style={containerStyle}>
+      return <div style={containerStyle} onScroll={this.onScroll}>
         <div style={contentStyle}>{items}</div>
       </div>
     }
