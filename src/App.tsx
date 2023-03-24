@@ -20,6 +20,7 @@ import InfiniteScrollerView from './containers/InfiniteScrollerView';
 import WindowListView from './containers/WindowListView';
 import ReactWindowIndex from './demos/reactwindow';
 import WindowListViewFixed from './containers/WindowListViewFixed';
+import AxiosDemo from './demos/axiosDemo';
 
 function App() {
   return (
@@ -76,7 +77,8 @@ function NewApp() {
     {/* <WindowListView /> */}
 
     {/* ReactWindow官方用例 */}
-    <ReactWindowIndex />
+    {/* <ReactWindowIndex /> */}
+    <AxiosDemo />
   </div>
 }
 export default NewApp;

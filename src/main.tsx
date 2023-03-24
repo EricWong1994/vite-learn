@@ -11,8 +11,8 @@ ReactDOM.render(
   <React.StrictMode>
     <StillnessProvider>
       <QueryClientProvider client={queryClient}>
-        {/* <App /> */}
-        <FixedSizeListDemo />
+        <App />
+        {/* <FixedSizeListDemo /> */}
       </QueryClientProvider>
     </StillnessProvider>
   </React.StrictMode>,
