@@ -4,8 +4,8 @@ import { FixedSizeList as List } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import InfiniteLoader from 'react-window-infinite-loader';
 
-import { fetchUsers } from '../services/UserService'
-import UserInfo from '../components/UserInfo'
+import { fetchUsers } from '../services/UserServiceFixed'
+import UserInfoFixed from '../components/UserInfoFixed'
 import './WindowListViewFixed.css';
 
 const isItemLoaded = index => false;
@@ -14,7 +14,7 @@ const Row = ({ data, index, style }) => {
   const user = data[index]
 
   return <div style={style}>
-    <UserInfo user={user} />
+    <UserInfoFixed user={user} />
   </div>
 }
 

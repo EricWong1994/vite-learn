@@ -6,6 +6,7 @@ export const fetchUsers = (count = 30) => {
   return [...Array(count)].map(() => ({
     id: seed++,
     name: faker.internet.userName(),
-    email: faker.internet.email()
+    email: faker.internet.email(),
+    cover: faker.image.abstract()
   }))
 }
