@@ -7,6 +7,8 @@ export const fetchUsers = (count = 30) => {
     id: seed++,
     name: faker.internet.userName(),
     email: faker.internet.email(),
-    cover: faker.image.abstract()
+    // cover: faker.image.abstract(100, 10)
+    // cover: faker.image.imageUrl(100, 10)
+    cover: faker.image.imageUrl(100, 50, 'cat', true)
   }))
 }

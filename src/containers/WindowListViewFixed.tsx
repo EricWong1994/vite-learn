@@ -37,7 +37,8 @@ const WindowListView = () => {
             isItemLoaded={isItemLoaded}
             itemCount={200000}
             loadMoreItems={loadMoreItems}
-            threshold={5}
+            threshold={2}
+          // threshold={5}
           >
             {({ onItemsRendered, ref }) => (
               <List

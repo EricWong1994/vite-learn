@@ -16,7 +16,7 @@ function createListComponent({
     }
     // 定义需要预渲染的个数
     static defaultProps = {
-      overscanCount: 2, // 性能好可以多设置
+      overscanCount: 0, // 性能好可以多设置
       // overscanCount: 5, // 性能好可以多设置
     }
 
