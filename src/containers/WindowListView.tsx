@@ -27,10 +27,10 @@ const WindowListView = () => {
     rowHeights.current = { ...rowHeights.current, [index]: size }
   }
   const Row = ({ data, index, style }) => {
-    delete style.height
-    const user = data[index]
+    const newStyle = { ...style, height: 'auto' };
+    const user = data[index];
     const { rowRef } = useRowChanged({ index, setRowHeight })
-    return <div style={style} ref={rowRef}>
+    return <div style={newStyle} ref={rowRef}>
       <UserInfo user={user} />
     </div>
   }

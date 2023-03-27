@@ -73,8 +73,8 @@ function NewApp() {
   return <div className='App'>
     {/* 下面3个都是B站虚拟列表 */}
     {/* <InfiniteScrollerView /> */}
-    <WindowListViewFixed />
-    {/* <WindowListView /> */}
+    {/* <WindowListViewFixed /> */}
+    <WindowListView />
 
     {/* ReactWindow官方用例 */}
     {/* <ReactWindowIndex /> */}
