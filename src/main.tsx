@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { StillnessProvider } from 'react-stillness-component';
 import App from './App';
 import FixedSizeListDemo from './demos/reactwindow/MiniWindow/FixedSizeListDemo';
+import './demos/i18ndemo/i18n.js';
 import './index.css';
 const queryClient = new QueryClient();
 

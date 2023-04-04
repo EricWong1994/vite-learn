@@ -21,6 +21,7 @@ import WindowListView from './containers/WindowListView';
 import ReactWindowIndex from './demos/reactwindow';
 import WindowListViewFixed from './containers/WindowListViewFixed';
 import AxiosDemo from './demos/axiosDemo';
+import GuoJiHua from './demos/i18ndemo'
 
 function App() {
   return (
@@ -74,11 +75,12 @@ function NewApp() {
     {/* 下面3个都是B站虚拟列表 */}
     {/* <InfiniteScrollerView /> */}
     {/* <WindowListViewFixed /> */}
-    <WindowListView />
+    {/* <WindowListView /> */}
 
     {/* ReactWindow官方用例 */}
     {/* <ReactWindowIndex /> */}
     {/* <AxiosDemo /> */}
+    <GuoJiHua />
   </div>
 }
 export default NewApp;
