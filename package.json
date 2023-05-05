@@ -20,6 +20,7 @@
     "dumi-ui": "^1.0.1",
     "esbuild": "^0.13.15",
     "json-server": "^0.17.3",
+    "qs": "^6.11.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-infinite-scroller": "^1.2.6",

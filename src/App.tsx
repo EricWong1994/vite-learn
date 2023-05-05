@@ -74,11 +74,11 @@ function NewApp() {
     {/* 下面3个都是B站虚拟列表 */}
     {/* <InfiniteScrollerView /> */}
     {/* <WindowListViewFixed /> */}
-    <WindowListView />
+    {/* <WindowListView /> */}
 
     {/* ReactWindow官方用例 */}
     {/* <ReactWindowIndex /> */}
-    {/* <AxiosDemo /> */}
+    <AxiosDemo />
   </div>
 }
 export default NewApp;

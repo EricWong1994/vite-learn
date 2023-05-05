@@ -23,6 +23,7 @@ specifiers:
   json-server: ^0.17.3
   postcss: ^8.4.19
   postcss-import: ^15.0.0
+  qs: ^6.11.1
   react: ^17.0.2
   react-dom: ^17.0.2
   react-infinite-scroller: ^1.2.6
@@ -54,6 +55,7 @@ dependencies:
   dumi-ui: 1.0.1
   esbuild: 0.13.15
   json-server: 0.17.3
+  qs: 6.11.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-infinite-scroller: 1.2.6_react@17.0.2
@@ -5016,6 +5018,13 @@ packages:
       side-channel: 1.0.4
     dev: false
 
+  /qs/6.11.1:
+    resolution: {integrity: sha512-0wsrzgTz/kAVIeuxSjnpGC56rzYtr6JT/2BwEvMaPhFIoYa1aGO8LbzuU1R0uUYQkLpWBTOj0l/CLAJB64J6nQ==}
+    engines: {node: '>=0.6'}
+    dependencies:
+      side-channel: 1.0.4
+    dev: false
+
   /query-string/5.1.1:
     resolution: {integrity: sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==}
     engines: {node: '>=0.10.0'}
@@ -6515,7 +6524,7 @@ packages:
     resolution: {integrity: sha512-OknwtQZddZHi0Ggi+Vr/olJ7HNMx4AzlywyK0W3NZBT7B0stjeZ9lcztA85dBgdAj3KVk8uPJPZSnGaDjELhrA==}
     dependencies:
       isomorphic-fetch: 2.2.1
-      qs: 6.11.0
+      qs: 6.11.1
     dev: false
 
   /unbox-primitive/1.0.2:
