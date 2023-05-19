@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Foo } from 'dumi-ui';
-// import { Button } from 'antd';
-import { Button } from '@geist-ui/core';
+import { Button } from 'antd';
+// import { Button } from '@geist-ui/core';
 // import Trycatch from './Trycatch';
 // import Trycatch from './demos/errorCatch/trycatch';
 import Trycatch from './demos/errorCatch/Trycatch';
@@ -70,15 +70,20 @@ function App() {
 }
 
 function NewApp() {
+  const fn = () => {
+    console.log('fn')
+    debugger
+  }
   return <div className='App'>
     {/* 下面3个都是B站虚拟列表 */}
     {/* <InfiniteScrollerView /> */}
     {/* <WindowListViewFixed /> */}
-    <WindowListView />
+    {/* <WindowListView /> */}
 
     {/* ReactWindow官方用例 */}
     {/* <ReactWindowIndex /> */}
     {/* <AxiosDemo /> */}
+    <Button type='primary' onClick={fn}>antd按钮</Button>
   </div>
 }
 export default NewApp;
