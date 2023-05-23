@@ -21,6 +21,7 @@ import WindowListView from './containers/WindowListView';
 import ReactWindowIndex from './demos/reactwindow';
 import WindowListViewFixed from './containers/WindowListViewFixed';
 import AxiosDemo from './demos/axiosDemo';
+import DragDemo from './demos/dragDemo';
 
 function App() {
   return (
@@ -83,7 +84,8 @@ function NewApp() {
     {/* ReactWindow官方用例 */}
     {/* <ReactWindowIndex /> */}
     {/* <AxiosDemo /> */}
-    <Button type='primary' onClick={fn}>antd按钮</Button>
+    {/* <Button type='primary' onClick={fn}>antd按钮</Button> */}
+    <DragDemo />
   </div>
 }
 export default NewApp;
